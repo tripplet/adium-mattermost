@@ -2,7 +2,7 @@ language: objective-c
 xcode_project: adium-mattermost.xcodeproj
 xcode_scheme: adium-mattermost
 before_install:
+  - brew install openssl
   - cd adium; make | tail -n 40; cd ..
   - cd discount; ./configure.sh; make; cd ..
-after_success:
-  - xctool -project adium-mattermost.xcodeproj -scheme adium-mattermost -configuration Release build
+  - git apply --whitespace=nowarn patch.diff

@@ -44,6 +44,7 @@
       allowLocationSimulation = "YES">
       <PathRunnable
          runnableDebuggingMode = "0"
+         BundleIdentifier = "com.adiumX.adiumX"
          FilePath = "/Applications/Adium.app">
       </PathRunnable>
       <MacroExpansion>

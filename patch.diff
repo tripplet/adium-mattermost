@@ -1,0 +1,46 @@
+diff --git a/purple-mattermost/libmattermost.c b/purple-mattermost/libmattermost.c
+index 764bb0e..5a25d2b 100644
+--- a/purple-mattermost/libmattermost.c
++++ b/purple-mattermost/libmattermost.c
+@@ -2333,6 +2333,20 @@ mm_refresh_statuses(MattermostAccount *ma, const gchar *id)
+ 	mm_socket_write_json(ma, obj);
+ }
+ 
++typedef struct {
++	gchar *title;
++	gchar *value;
++	// short
++} MattermostAttachmentField;
++
++void mm_g_free_mattermost_attachment_field(gpointer f) 
++{
++	MattermostAttachmentField *af = f;
++	if (!af) return;
++	g_free(af->title);
++	g_free(af->value);
++	g_free(af);
++}
+ 
+ static gchar *
+ mm_process_attachment(JsonObject *attachment)
+@@ -2348,20 +2362,7 @@ mm_process_attachment(JsonObject *attachment)
+ #define MM_ATT_IMAGE(i) "<a href=\"", i, "\">", i, "</a><br>"
+ #define MM_ATT_TEXT(t) "<span>", t, "</span><br>"
+ 
+-typedef struct {
+-	gchar *title;
+-	gchar *value;
+-	// short
+-} MattermostAttachmentField;
+ 
+-void mm_g_free_mattermost_attachment_field(gpointer f) 
+-{
+-	MattermostAttachmentField *af = f;
+-	if (!af) return;
+-	g_free(af->title);
+-	g_free(af->value);
+-	g_free(af);
+-}
+ 
+ 	gchar *msg_top = NULL;
+ 	gchar *msg_fields = NULL;
