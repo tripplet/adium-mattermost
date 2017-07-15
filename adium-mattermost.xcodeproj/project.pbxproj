@@ -1,0 +1,421 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		CD360AE41F1A591600E6E652 /* libmattermost.c in Sources */ = {isa = PBXBuildFile; fileRef = CD360AE31F1A591600E6E652 /* libmattermost.c */; };
+		CD360AED1F1A5EE000E6E652 /* mattermost16.png in Resources */ = {isa = PBXBuildFile; fileRef = CD360AEB1F1A5EE000E6E652 /* mattermost16.png */; };
+		CD360AEE1F1A5EE000E6E652 /* mattermost48.png in Resources */ = {isa = PBXBuildFile; fileRef = CD360AEC1F1A5EE000E6E652 /* mattermost48.png */; };
+		CD360AFF1F1A688D00E6E652 /* libglib.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CD360AFB1F1A688D00E6E652 /* libglib.framework */; };
+		CD360B001F1A688D00E6E652 /* libgobject.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CD360AFC1F1A688D00E6E652 /* libgobject.framework */; };
+		CD360B011F1A688D00E6E652 /* libjson-glib.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CD360AFD1F1A688D00E6E652 /* libjson-glib.framework */; };
+		CD360B021F1A688D00E6E652 /* libpurple.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CD360AFE1F1A688D00E6E652 /* libpurple.framework */; };
+		CD360B041F1A6B8A00E6E652 /* libmarkdown.a in Frameworks */ = {isa = PBXBuildFile; fileRef = CD360B031F1A6B8A00E6E652 /* libmarkdown.a */; };
+		CD360B071F1A6CB400E6E652 /* AIMattermostPlugin.m in Sources */ = {isa = PBXBuildFile; fileRef = CD360B061F1A6CB400E6E652 /* AIMattermostPlugin.m */; };
+		CD360B0A1F1A6CD700E6E652 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CD360B091F1A6CD700E6E652 /* Foundation.framework */; };
+		CD360B0F1F1A6EB900E6E652 /* PurpleMattermostAccount.m in Sources */ = {isa = PBXBuildFile; fileRef = CD360B0C1F1A6EB900E6E652 /* PurpleMattermostAccount.m */; };
+		CD360B101F1A6EB900E6E652 /* PurpleMattermostService.m in Sources */ = {isa = PBXBuildFile; fileRef = CD360B0E1F1A6EB900E6E652 /* PurpleMattermostService.m */; };
+		CD360B151F1A719000E6E652 /* Adium.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CD360B121F1A719000E6E652 /* Adium.framework */; };
+		CD360B161F1A719000E6E652 /* AdiumLibpurple.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CD360B131F1A719000E6E652 /* AdiumLibpurple.framework */; };
+		CD360B171F1A719000E6E652 /* AIUtilities.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CD360B141F1A719000E6E652 /* AIUtilities.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		CD360AD91F1A556200E6E652 /* adium-mattermost.AdiumPlugin */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "adium-mattermost.AdiumPlugin"; sourceTree = BUILT_PRODUCTS_DIR; };
+		CD360ADC1F1A556200E6E652 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CD360AE31F1A591600E6E652 /* libmattermost.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = libmattermost.c; path = "purple-mattermost/libmattermost.c"; sourceTree = "<group>"; };
+		CD360AEB1F1A5EE000E6E652 /* mattermost16.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = mattermost16.png; path = "purple-mattermost/mattermost16.png"; sourceTree = "<group>"; };
+		CD360AEC1F1A5EE000E6E652 /* mattermost48.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = mattermost48.png; path = "purple-mattermost/mattermost48.png"; sourceTree = "<group>"; };
+		CD360AFB1F1A688D00E6E652 /* libglib.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = libglib.framework; path = adium/Frameworks/libglib.framework; sourceTree = "<group>"; };
+		CD360AFC1F1A688D00E6E652 /* libgobject.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = libgobject.framework; path = adium/Frameworks/libgobject.framework; sourceTree = "<group>"; };
+		CD360AFD1F1A688D00E6E652 /* libjson-glib.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = "libjson-glib.framework"; path = "adium/Frameworks/libjson-glib.framework"; sourceTree = "<group>"; };
+		CD360AFE1F1A688D00E6E652 /* libpurple.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = libpurple.framework; path = adium/Frameworks/libpurple.framework; sourceTree = "<group>"; };
+		CD360B031F1A6B8A00E6E652 /* libmarkdown.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libmarkdown.a; path = discount/libmarkdown.a; sourceTree = "<group>"; };
+		CD360B051F1A6CB400E6E652 /* AIMattermostPlugin.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AIMattermostPlugin.h; sourceTree = "<group>"; };
+		CD360B061F1A6CB400E6E652 /* AIMattermostPlugin.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AIMattermostPlugin.m; sourceTree = "<group>"; };
+		CD360B091F1A6CD700E6E652 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		CD360B0B1F1A6EB900E6E652 /* PurpleMattermostAccount.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PurpleMattermostAccount.h; sourceTree = "<group>"; };
+		CD360B0C1F1A6EB900E6E652 /* PurpleMattermostAccount.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PurpleMattermostAccount.m; sourceTree = "<group>"; };
+		CD360B0D1F1A6EB900E6E652 /* PurpleMattermostService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PurpleMattermostService.h; sourceTree = "<group>"; };
+		CD360B0E1F1A6EB900E6E652 /* PurpleMattermostService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PurpleMattermostService.m; sourceTree = "<group>"; };
+		CD360B121F1A719000E6E652 /* Adium.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Adium.framework; path = "../../Library/Developer/Xcode/DerivedData/Adium-blxdfmdhrlodtjdjsqqnilivggjq/Build/Products/Release-Debug/Adium.framework"; sourceTree = "<group>"; };
+		CD360B131F1A719000E6E652 /* AdiumLibpurple.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AdiumLibpurple.framework; path = "../../Library/Developer/Xcode/DerivedData/Adium-blxdfmdhrlodtjdjsqqnilivggjq/Build/Products/Release-Debug/AdiumLibpurple.framework"; sourceTree = "<group>"; };
+		CD360B141F1A719000E6E652 /* AIUtilities.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AIUtilities.framework; path = "../../Library/Developer/Xcode/DerivedData/Adium-blxdfmdhrlodtjdjsqqnilivggjq/Build/Products/Release-Debug/AIUtilities.framework"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		CD360AD61F1A556200E6E652 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CD360B151F1A719000E6E652 /* Adium.framework in Frameworks */,
+				CD360B161F1A719000E6E652 /* AdiumLibpurple.framework in Frameworks */,
+				CD360B171F1A719000E6E652 /* AIUtilities.framework in Frameworks */,
+				CD360B0A1F1A6CD700E6E652 /* Foundation.framework in Frameworks */,
+				CD360B041F1A6B8A00E6E652 /* libmarkdown.a in Frameworks */,
+				CD360AFF1F1A688D00E6E652 /* libglib.framework in Frameworks */,
+				CD360B001F1A688D00E6E652 /* libgobject.framework in Frameworks */,
+				CD360B011F1A688D00E6E652 /* libjson-glib.framework in Frameworks */,
+				CD360B021F1A688D00E6E652 /* libpurple.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		CD360AD01F1A556200E6E652 = {
+			isa = PBXGroup;
+			children = (
+				CD360AEA1F1A5EC400E6E652 /* icons */,
+				CD360AE21F1A58EF00E6E652 /* purple-mattermost */,
+				CD360ADB1F1A556200E6E652 /* adium-mattermost */,
+				CD360AFA1F1A688D00E6E652 /* Frameworks */,
+				CD360ADA1F1A556200E6E652 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		CD360ADA1F1A556200E6E652 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				CD360AD91F1A556200E6E652 /* adium-mattermost.AdiumPlugin */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		CD360ADB1F1A556200E6E652 /* adium-mattermost */ = {
+			isa = PBXGroup;
+			children = (
+				CD360ADC1F1A556200E6E652 /* Info.plist */,
+				CD360B0B1F1A6EB900E6E652 /* PurpleMattermostAccount.h */,
+				CD360B0C1F1A6EB900E6E652 /* PurpleMattermostAccount.m */,
+				CD360B0D1F1A6EB900E6E652 /* PurpleMattermostService.h */,
+				CD360B0E1F1A6EB900E6E652 /* PurpleMattermostService.m */,
+				CD360B051F1A6CB400E6E652 /* AIMattermostPlugin.h */,
+				CD360B061F1A6CB400E6E652 /* AIMattermostPlugin.m */,
+			);
+			path = "adium-mattermost";
+			sourceTree = "<group>";
+		};
+		CD360AE21F1A58EF00E6E652 /* purple-mattermost */ = {
+			isa = PBXGroup;
+			children = (
+				CD360AE31F1A591600E6E652 /* libmattermost.c */,
+			);
+			name = "purple-mattermost";
+			sourceTree = "<group>";
+		};
+		CD360AEA1F1A5EC400E6E652 /* icons */ = {
+			isa = PBXGroup;
+			children = (
+				CD360AEB1F1A5EE000E6E652 /* mattermost16.png */,
+				CD360AEC1F1A5EE000E6E652 /* mattermost48.png */,
+			);
+			name = icons;
+			sourceTree = "<group>";
+		};
+		CD360AFA1F1A688D00E6E652 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				CD360B091F1A6CD700E6E652 /* Foundation.framework */,
+				CD360B081F1A6CBE00E6E652 /* Adium */,
+				CD360B031F1A6B8A00E6E652 /* libmarkdown.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		CD360B081F1A6CBE00E6E652 /* Adium */ = {
+			isa = PBXGroup;
+			children = (
+				CD360B121F1A719000E6E652 /* Adium.framework */,
+				CD360B131F1A719000E6E652 /* AdiumLibpurple.framework */,
+				CD360B141F1A719000E6E652 /* AIUtilities.framework */,
+				CD360AFB1F1A688D00E6E652 /* libglib.framework */,
+				CD360AFC1F1A688D00E6E652 /* libgobject.framework */,
+				CD360AFD1F1A688D00E6E652 /* libjson-glib.framework */,
+				CD360AFE1F1A688D00E6E652 /* libpurple.framework */,
+			);
+			name = Adium;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		CD360AD81F1A556200E6E652 /* adium-mattermost */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CD360ADF1F1A556200E6E652 /* Build configuration list for PBXNativeTarget "adium-mattermost" */;
+			buildPhases = (
+				CD360AD51F1A556200E6E652 /* Sources */,
+				CD360AD61F1A556200E6E652 /* Frameworks */,
+				CD360AD71F1A556200E6E652 /* Resources */,
+				CD360AE51F1A5E8200E6E652 /* ShellScript */,
+				CD360AEF1F1A5EF900E6E652 /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "adium-mattermost";
+			productName = "adium-mattermost";
+			productReference = CD360AD91F1A556200E6E652 /* adium-mattermost.AdiumPlugin */;
+			productType = "com.apple.product-type.bundle";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		CD360AD11F1A556200E6E652 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0830;
+				ORGANIZATIONNAME = "Tobias Tangemann";
+				TargetAttributes = {
+					CD360AD81F1A556200E6E652 = {
+						CreatedOnToolsVersion = 8.3.3;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = CD360AD41F1A556200E6E652 /* Build configuration list for PBXProject "adium-mattermost" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = CD360AD01F1A556200E6E652;
+			productRefGroup = CD360ADA1F1A556200E6E652 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				CD360AD81F1A556200E6E652 /* adium-mattermost */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		CD360AD71F1A556200E6E652 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CD360AED1F1A5EE000E6E652 /* mattermost16.png in Resources */,
+				CD360AEE1F1A5EE000E6E652 /* mattermost48.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		CD360AE51F1A5E8200E6E652 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "ln -sf \"$BUILD_DIR\" xcode_build";
+		};
+		CD360AEF1F1A5EF900E6E652 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "PLUGIN_BIN=\"$TARGET_BUILD_DIR/$EXECUTABLE_PATH\"\nLIBS=\"$(/usr/bin/otool -L \"$PLUGIN_BIN\" | \\\n/usr/bin/tail -n +2 | \\\n/usr/bin/tr -d '\\t' | \\\n/usr/bin/grep -e '^@[a-z_]*path.*' | \\\n/usr/bin/grep -v -e '\\.framework/Versions/Current' | \\\n/usr/bin/sed \\\ns/'(compatibility version [0-9.]*, current version [0-9.]*)'/''/g)\"\n\nfor LIB in $LIBS; do\nNEW_LIB=\"$(/bin/echo \"$LIB\" | /usr/bin/sed s,'Versions/[A-Za-z0-9.]*/','Versions/Current/',)\"\nprintf \"Changing '%s' to '%s'\\n\" \"$LIB\" \"$NEW_LIB\"\n/usr/bin/install_name_tool -change \"$LIB\" \"$NEW_LIB\" \"$PLUGIN_BIN\"\ndone";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		CD360AD51F1A556200E6E652 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CD360AE41F1A591600E6E652 /* libmattermost.c in Sources */,
+				CD360B071F1A6CB400E6E652 /* AIMattermostPlugin.m in Sources */,
+				CD360B0F1F1A6EB900E6E652 /* PurpleMattermostAccount.m in Sources */,
+				CD360B101F1A6EB900E6E652 /* PurpleMattermostService.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		CD360ADD1F1A556200E6E652 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = NO;
+				SDKROOT = macosx10.12;
+			};
+			name = Debug;
+		};
+		CD360ADE1F1A556200E6E652 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				ONLY_ACTIVE_ARCH = NO;
+				SDKROOT = macosx10.12;
+			};
+			name = Release;
+		};
+		CD360AE01F1A556200E6E652 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/adium/build/Release-Debug",
+					"$(PROJECT_DIR)/adium/Frameworks",
+				);
+				HEADER_SEARCH_PATHS = (
+					"$(SOURCE_ROOT)/adium/Frameworks/libglib.framework/Versions/Current/Headers",
+					"$(SOURCE_ROOT)/adium/Frameworks/libintl.framework/Versions/Current/Headers",
+					"$(SOURCE_ROOT)/adium/Frameworks/libjson-glib.framework/Versions/Current/Headers",
+					"$(SOURCE_ROOT)/adium/Frameworks/libpurple.framework/Versions/Current/Headers",
+				);
+				INFOPLIST_FILE = "adium-mattermost/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Bundles";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/discount",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.tangemann.adium-mattermost";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				WRAPPER_EXTENSION = AdiumPlugin;
+			};
+			name = Debug;
+		};
+		CD360AE11F1A556200E6E652 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/adium/build/Release-Debug",
+					"$(PROJECT_DIR)/adium/Frameworks",
+				);
+				HEADER_SEARCH_PATHS = (
+					"$(SOURCE_ROOT)/adium/Frameworks/libglib.framework/Versions/Current/Headers",
+					"$(SOURCE_ROOT)/adium/Frameworks/libintl.framework/Versions/Current/Headers",
+					"$(SOURCE_ROOT)/adium/Frameworks/libjson-glib.framework/Versions/Current/Headers",
+					"$(SOURCE_ROOT)/adium/Frameworks/libpurple.framework/Versions/Current/Headers",
+				);
+				INFOPLIST_FILE = "adium-mattermost/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Bundles";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/discount",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.tangemann.adium-mattermost";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				WRAPPER_EXTENSION = AdiumPlugin;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		CD360AD41F1A556200E6E652 /* Build configuration list for PBXProject "adium-mattermost" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CD360ADD1F1A556200E6E652 /* Debug */,
+				CD360ADE1F1A556200E6E652 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CD360ADF1F1A556200E6E652 /* Build configuration list for PBXNativeTarget "adium-mattermost" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CD360AE01F1A556200E6E652 /* Debug */,
+				CD360AE11F1A556200E6E652 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = CD360AD11F1A556200E6E652 /* Project object */;
+}

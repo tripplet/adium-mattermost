@@ -1,0 +1,6 @@
+[submodule "purple-mattermost"]
+	path = purple-mattermost
+	url = https://github.com/EionRobb/purple-mattermost.git
+[submodule "adium"]
+	path = adium
+	url = https://github.com/adium/adium.git

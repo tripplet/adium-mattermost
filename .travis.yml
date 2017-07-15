@@ -1,0 +1,7 @@
+language: objective-c
+xcode_project: adium-mattermost.xcodeproj
+xcode_scheme: adium-mattermost
+before_install:
+  - cd adium; make | tail -n 40; cd ..
+after_success:
+  - xctool -project adium-mattermost.xcodeproj -scheme adium-mattermost -configuration Release build
